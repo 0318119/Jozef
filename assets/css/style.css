@@ -1,0 +1,1068 @@
+
+
+/* ++ Noto Sans fonts family ++ */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* ++ Universal Styling ++ */
+:root{
+  overflow-x: clip !important;
+}
+body{font-family: 'Noto','sans-serif';}
+.fade:not(.show) {opacity: 1;}
+.fades:not(.show) {opacity: 1;}
+li{font-family: 'Noto','sans-serif';}
+button{font-family: 'Noto Sans', sans-serif;}
+label{font-family: 'Noto Sans', sans-serif;}
+input{font-family: 'Noto Sans', sans-serif;}
+textarea{font-family: 'Noto Sans', sans-serif;}
+a{
+    color: black;
+    text-decoration: none;
+    font-family: 'Noto Sans', sans-serif;
+    text-transform: capitalize;
+}
+a:hover{text-decoration: none;}
+ul{
+    list-style: none;
+    padding: 0%;
+    margin: 0%;
+}
+li{
+    padding: 0%;
+    margin: 0%;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Noto Sans', sans-serif;
+    text-transform: capitalize;
+}
+p{
+    font-family: 'Noto Sans', sans-serif;
+}
+span{
+    font-family: 'Noto Sans', sans-serif;
+    text-transform: capitalize;
+}
+
+
+
+/* ++ HEADER STYLING ++ */
+.headerTop{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    background: transparent;
+    z-index: 5;
+    height: 72px;
+}
+
+/* ++ JS ADD CLASS ++ */
+.headerTop.topMenu{
+    background: #dee2e6;
+}
+.navbar-brand.active{
+    color: black;
+}
+.headerTop .navbar .collapse ul li a{
+    color: white;
+    margin: 7px 0 0 0;
+}
+.headerTop .navbar .collapse ul li a.active{
+    color: black;
+}
+.navbar-brand{
+    color: white;
+}
+.mobileMenu ul li{
+  position: relative;
+}
+.mobileMenu ul li.rentBox:hover ul{
+  opacity: 1;
+  transition: all 1s ease-in-out;
+}
+.mobileMenu ul li.rentBox ul li:hover{
+  background: #dee2e6;
+  transition: all 1s ease-in-out;
+}
+.mobileMenu ul li.rentBox ul{
+  position: absolute;
+  background: white;
+  padding: 0px 0px;
+  border-radius: 9px 40px 0 0;
+  opacity: 0;
+  overflow: hidden;
+}
+.mobileMenu ul li.rentBox ul li{
+  line-height: 38px;
+  padding: 9px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+.mobileMenu ul li.rentBox ul li a{
+  color: black !important;
+  letter-spacing: 1px;
+  padding: 0 100px 0 15px;
+}
+.btnCon{
+    margin: 0 0px 0px 70px;
+}
+.btnCon a{
+    border: 1px solid white;
+    padding: 10px 0 10px 0;
+    margin: 7px 0 0 0;
+    display: block;
+}
+.btnCon a:hover{
+    background: black;
+    color: white;
+    transition: all .5s linear;
+    border-color: transparent;
+}
+
+
+/* ++ HERO SECTION STLYING ++ */
+
+.slick-dotted.slick-slider {
+    overflow: hidden;
+}
+.heroSelider .heroImg{
+    display: flex;
+    background-size: cover;
+    height: 800px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.heroSelider .slick-list .slick-track{
+    display: flex;
+}
+.heroSelider .slick-list{
+    padding: 0 !important;
+}
+.heroSelider .heroImg > div {
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-blend-mode: overlay !important;
+    background: #00000052;
+}
+.heroSelider .heroImg > div h5{
+    font-size: 50px;
+    text-transform: capitalize;
+    letter-spacing: 5px;
+    font-weight: 900;
+}
+.heroSelider .heroImg.slick-active > div h5{
+    animation: focus-in-contract 1s ease 0s 1 normal none;
+}
+  @keyframes focus-in-contract {
+    0%{
+      letter-spacing: 1em;
+      filter: blur(12px);
+      opacity: 0;
+    }
+    100%{
+      filter: blur(0);
+      opacity: 1;
+    }
+  }
+
+.heroSelider .slick-dots {
+    bottom: 200px;
+}
+.heroSelider .slick-dots li button:before {
+    width: 70px;
+    height: 5px;
+    content: '';
+    background: white;
+}
+.heroSelider .slick-dots li {
+    width: 70px;
+}
+
+
+/* ++ ABOUT SECTION ++ */
+.about{
+    margin: 80px 0 0 0;
+}
+.aboutSec > img:hover{
+    cursor: pointer;
+}
+.aboutSec h4{
+    color: #c78919;
+    font-size: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    padding: 0 0 10px 0;
+}
+.aboutSec p{
+    color: grey;
+}
+.aboutSec a{
+    border: 1px solid;
+    color: black;
+    padding: 13px 24px;
+    margin-top: 15px;
+    display: inline-block;
+}
+.aboutSec a:hover{
+    background: black;
+    color: white;
+    transition: all .5s linear;
+}
+
+
+
+/* ++ LISTING SECTION ++ */
+.featuredCol a{
+    color: black;
+}
+.featured h5{
+    color: #c78919;
+    font-size: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-top: 150px;
+    text-align: center;
+}
+.featured p{
+    color: grey;
+    padding: 7px 60px 0 60px;
+    text-align: center;
+}
+
+
+.listingBox h4{
+    margin-top: 15px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.listingBox p{
+    color: grey;
+    padding-top: 5px;
+}
+.loadLis{
+    border: 1px solid;
+    color: black;
+    padding: 13px 24px;
+    margin-top: 15px;
+    display: inline-block;
+    margin: auto;
+    text-transform: capitalize;
+}
+.loadLis:hover{
+    background: black;
+    color: white;
+    transition: all .5s linear;
+}
+
+
+/* ++ TESTIMONIALS SECTION ++ */
+.testimonialSlider{
+    margin-top: 130px;
+}
+.testimonialSlider .slick-list .slick-track{
+    display: flex;
+}
+.testimonialSlider .slick-list{
+    padding: 0 !important;
+}
+.testimonialSlider .slick-dots{
+    bottom: auto;
+}
+.testimonialSlider .slick-dots li {
+    margin: 40px 5px 0 5px;
+}
+.testimonialSlider .slick-dots li button:before {
+    content: '';
+    border: 1px solid grey;
+    border-radius: 52px;
+}
+.testimonialSlider .slick-dots li.slick-active{
+    background: #c78919;
+    border-radius: 52px;
+}
+.scdTesti{
+    box-shadow: 0px 2px 10px #80808047;
+    /* position: absolute; */
+    /* right: 0; */
+    /* left: -50px; */
+    width: 70%;
+    /* top: 70px; */
+    padding: 30px 100px;
+    background: white;
+}
+.testiBox img{
+    height: 462px;
+    width: 100%;
+    object-fit: cover;
+}
+.testiBox h4{
+    font-weight: 800;
+    color: #c78919;
+    font-size: 50px;
+}
+.testiBox p{
+    color: grey;
+    padding: 20px 40px 10px 0px;
+    font-size: 15px;
+}
+.testiBox ul li{
+    font-weight: 800;
+    font-size: 20px;
+}
+.testiBox ul a{
+    color: black;
+}
+
+
+
+/* ++ OUR AGENTS SECTION ++ */
+.agentsBox{
+    box-shadow: 1px 0px 10px #80808066;
+    padding: 20px;
+}
+.agents h5{
+    color: #c78919;
+    font-size: 40px;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    margin-top: 150px;
+}
+.agents p{
+    color: grey;
+    text-align: center;
+}
+.agentsBox p{
+    color: grey;
+    padding: 7px 60px 0 60px;
+    text-align: center;
+}
+
+
+.agentsBox h4{
+    font-size: 20px;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 50px 0 0 0;
+}
+.agentsBox a{
+    color: #c78919;
+    margin-top: 40px;
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: underline;
+}
+.loadAgen{
+    border: 1px solid;
+    color: black;
+    padding: 13px 24px;
+    margin-top: 15px;
+    display: inline-block;
+    margin: auto;
+    text-transform: capitalize;
+}
+.loadAgen:hover{
+    background: black;
+    color: white;
+    transition: all .5s linear;
+}
+
+
+/* ++ FOOTER SECTION ++ */
+
+.footerBg{
+    background: #a7a29a54;
+    margin-top: 90px;
+    padding-top: 30px;
+}
+.footerCon h4{
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+.footerCon p{
+    color: grey;
+    padding: 10px 0;
+}
+.footerCon ul li i{
+    font-size: 30px;
+}
+.footerCon ul li{
+    display: inline-block;
+    margin: 0 30px 0 0;
+}
+
+.footerLinks h4{
+    margin-top: 10px;
+}
+.footerLinks ul li i{
+    padding: 0 10px 0px 0px;
+}
+.footerLinks ul li a{
+    color: black;
+    line-height: 40px;
+}
+
+.copyBg{
+    background: #c78919;
+}
+.copyrightLinks ul{
+    display: flex;
+}
+
+.copyrightLinks ul li a{
+    color: white;
+    display: block;
+    margin: 15px 30px 15px 0;
+}
+.copyRight{
+    color: white;
+    margin: 15px 30px 15px 0;
+}
+
+/* ++ MODAL CSS ++ */
+.flexBoxModal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.videoModal{
+    width: 50%;
+}
+/* .fade:not(.show) {
+    display: none;
+} */
+.imgModal > video{
+    width: 100%;
+    margin: 40px 0 0 0;
+}
+button.close{
+    position: absolute;
+    right: 15px;
+    top: 9px;
+    z-index: 2;
+    background: #80808070;
+    padding: 5px 11px 5px 11px;
+    color: black;
+    border-radius: 20px;
+}
+
+/* ==================================================================== */
+
+.roomZoom {
+    position: relative;
+    overflow: hidden;
+    margin: 120px 0 0 0;
+  }
+  .roomZoom:hover {
+    cursor: pointer;
+  }
+  .roomZoom:hover .roomsDetailsBox {
+    transition: 0.3s;
+    transform: scale(1.1);
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .roomDeatilsCol {
+    position: relative;
+  }
+  
+  .titles {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 28%;
+    z-index: 2;
+    width: 50%;
+  }
+  .titles .roomTitles {
+    position: relative;
+    background: white;
+    padding: 10px 20px;
+    border-radius: 11px;
+  }
+  .titles .roomTitles .innerTitle {
+    text-transform: uppercase;
+    font-size: 11px;
+    margin: 0;
+    letter-spacing: 1px;
+  }
+  .titles .roomTitles.titleOne .innerTitle {
+    color: green;
+  }
+  .titles .roomTitles.titleTwo .innerTitle {
+    color: blue;
+  }
+  .titles .roomTitles.titleThree .innerTitle {
+    color: grey;
+  }
+  
+  .saveShare {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    top: 28%;
+    z-index: 2;
+    right: 0;
+    width: 28%;
+  }
+  .saveShare:hover {
+    cursor: pointer;
+  }
+  .saveShare .saveShareicons {
+    background: white;
+    padding: 10px 16px;
+    border-radius: 10px;
+    background: white;
+  }
+  .saveShare .saveShareicons img {
+    height: 25px;
+  }
+  .saveShare .saveShareicons a {
+    display: inline-block;
+    font-size: 17px;
+  }
+  
+  .roomsDetailsBox {
+    display: flex;
+    justify-content: center;
+    box-shadow: 5px 5px 10px rgba(128, 128, 128, 0.4784313725);
+    transition: 0.3s;
+    height: 600px;
+  }
+  .roomsDetailsBox .bigImg {
+    width: 100%;
+    height: 600px;
+  }
+  .roomsDetailsBox .bigImg img.bigImage {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    height: 600px;
+  }
+  .roomsDetailsBox .smallImg {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+  }
+  .roomsDetailsBox .smallImg img.smallImage {
+    width: 100%;
+    height: 300px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  .roomsDetailsBox .smallImg img.smallImage:nth-child(2) {
+    padding-top: 10px;
+  }
+  
+  .roomInfo {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .roomInfo .romInnerInfo {
+    width: 50%;
+  }
+  .roomInfo .romInnerInfo h5 {
+    color: grey;
+    font-weight: 500;
+    letter-spacing: 1px;
+    line-height: 30px;
+  }
+  .roomInfo .romInnerInfo h6.romInnerFlex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .roomInfo .romInnerInfo h6.romInnerFlex span {
+    color: grey;
+    font-size: 15px;
+    display: block;
+    font-weight: 300;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+  }
+  .roomInfo .romInnerInfo h6.romInnerFlex a {
+    color: grey;
+    font-size: 15px;
+    display: block;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 300;
+  }
+  .roomInfo .romInnerInfo h6.romInnerFlex a:hover {
+    text-decoration: underline;
+  }
+  .roomInfo .romInnerInfo h6.romInnerFlex .innerIcons {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+  .roomInfo .romInnerInfo h6.romInnerFlex .innerIcons img {
+    height: 20px;
+    margin-right: 10px;
+  }
+  .roomInfo .romInnerInfo h6.romInnerFlex .innerIcons span {
+    color: black;
+    font-size: 15px;
+    display: block;
+    font-weight: 300;
+  }
+  
+  .applyBox .pricePerMon {
+    font-size: 25px;
+  }
+  .applyBox span {
+    display: block;
+    color: gray;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 20px 0;
+  }
+  .applyBox button.applyBtn {
+    padding: 10px 40px;
+    letter-spacing: 1px;
+    color: white;
+    background: #c78919;
+    transition: 1s;
+    border: none;
+  }
+  .applyBox button.applyBtn:hover {
+    background: black;
+  }
+  
+  .bookinBox {
+    border: 1px solid rgba(128, 128, 128, 0.2588235294);
+    box-shadow: 5px 10px 10px rgba(128, 128, 128, 0.1882352941);
+    border-radius: 10px;
+    padding: 28px 15px;
+  }
+  .bookinBox h6 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+  }
+  .bookinBox h5 {
+    margin-top: 15px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+  }
+  .bookinBox .formFlex {
+    display: flex;
+  }
+  .bookinBox .formFlex input {
+    height: 50px;
+  }
+  .bookinBox .formFlex input:focus {
+    border: #c78919;
+    box-shadow: 0 0 0 0.25rem #c7891970;
+  }
+  .bookinBox .formFlex input:nth-child(2) {
+    margin-left: 25px;
+  }
+  .bookinBox .formFlex textarea:focus {
+    border: #c78919;
+    box-shadow: 0 0 0 0.25rem #c7891970;
+  }
+  .bookinBox .labels {
+    font-size: 13px;
+    color: gray;
+  }
+  .bookinBox .availBtn {
+    background: #c78919;
+    color: white;
+    display: block;
+    text-align: center;
+    margin: 40px 0 15px 0;
+    padding: 15px 0;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    text-transform: capitalize;
+    transition: 1s;
+  }
+  .bookinBox .availBtn:hover {
+    background: black;
+  }
+  .bookinBox .policyTxt {
+    text-transform: capitalize;
+    color: gray;
+    font-size: 12px;
+    font-weight: 200;
+  }
+  
+  .mapsInfo {
+    margin-top: 50px;
+  }
+  .mapsInfo .mapLocal {
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+  }
+  .mapsInfo ul.nav-tabs {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    border-bottom: none;
+  }
+  .mapsInfo ul.nav-tabs li a.active {
+    color: #c78919;
+    border: 1px solid rgba(129, 125, 125, 0.2901960784);
+    padding: 10px 30px;
+    border-radius: 9px;
+    box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.1411764706);
+  }
+  .mapsInfo .tab-content {
+    margin-top: 20px;
+  }
+  .mapsInfo .tab-content .googleMaps {
+    width: 100%;
+  }
+  .mapsInfo .tab-content .googleMaps iframe {
+    width: 91%;
+    height: 300px;
+  }
+  
+  .desBox {
+    margin-top: 35px;
+  }
+  .desBox .desHead {
+    margin-top: 15px;
+  }
+  .desBox .desPhone {
+    color: #c78919;
+    text-decoration: underline;
+    display: block;
+    margin-bottom: 25px;
+  }
+  .desBox p.desExplaine {
+    color: gray;
+    font-weight: 400;
+  }
+  
+  .homeHighlights {
+    border: 1px solid #dee2e6;
+    padding: 0 20px 20px 20px;
+    border-radius: 15px;
+  }
+  .homeHighlights h5.highlightsHead {
+    margin: 30px 0;
+  }
+  .homeHighlights .flexHighlights {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .homeHighlights .flexHighlights .innerhlights h6 img {
+    height: 25px;
+    margin-right: 10px;
+  }
+  .homeHighlights .flexHighlights .innerhlights h6 span {
+    font-weight: 400;
+    color: gray;
+    font-size: 15px;
+  }
+  .homeHighlights .scdHlights h6 span {
+    font-weight: 600 !important;
+    color: black !important;
+  }
+  
+  .interiorBox {
+    margin-top: 40px;
+  }
+  .interiorBox .interiorTopHead {
+    display: flex;
+    align-items: center;
+    background: #f4f4f4;
+    padding: 12px 13px;
+    border-radius: 20px 20px 0 0;
+    border: 1px solid rgba(128, 128, 128, 0.2117647059);
+    margin: 0;
+  }
+  .interiorBox .interiorTopHead img {
+    height: 25px;
+  }
+  .interiorBox .interiorTopHead span {
+    font-size: 18px;
+    padding-top: 10px;
+    margin-left: 17px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+  }
+  .interiorBox .interiorTable {
+    width: 100%;
+  }
+  .interiorBox .interiorTable tr {
+    border: 1px solid rgba(128, 128, 128, 0.2117647059);
+  }
+  .interiorBox .interiorTable tr td {
+    padding: 15px 25px;
+  }
+  .interiorBox .interiorTable tr h4 {
+    font-size: 15px;
+    margin-bottom: 15px;
+  }
+  .interiorBox .interiorTable tr .upBox {
+    display: flex;
+    width: 100%;
+  }
+  .interiorBox .interiorTable tr .upBox li {
+    width: 33%;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: gray;
+  }
+  .interiorBox .seeAllBtn {
+    display: inline-flex;
+    padding: 6px 15px;
+    border: 1px solid rgba(128, 128, 128, 0.2784313725);
+    margin-top: 12px;
+    box-shadow: 5px 3px 10px rgba(128, 128, 128, 0.2509803922);
+  }
+  .interiorBox .seeAllBtn:hover {
+    cursor: pointer;
+  }
+  
+  .roomCardSlider {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    padding: 55px 0px;
+  }
+  .roomCardSlider .slick-track {
+    display: flex;
+    padding: 30px 0;
+  }
+  .roomCardSlider .slick-prev:before, .roomCardSlider .slick-next:before {
+    color: black;
+    font-size: 30px;
+  }
+  .roomCardSlider .slick-next:before {
+    content: "➜";
+  }
+  .roomCardSlider .slick-next {
+    right: 25px;
+    z-index: 22;
+  }
+  .roomCardSlider .slick-prev:before {
+    content: "➜";
+    transform: rotate(180deg);
+    position: inherit;
+  }
+  .roomCardSlider .slick-prev {
+    left: 20px;
+    z-index: 22;
+  }
+  .roomCardSlider .slick-prev, .roomCardSlider .slick-next {
+    top: 41%;
+  }
+  .roomCardSlider .roomsCard {
+    background: white;
+    position: relative;
+    box-shadow: -1px 10px 10px rgba(128, 128, 128, 0.631372549);
+    border-radius: 20px;
+    margin: 0 0 0 18px;
+  }
+  .roomCardSlider .roomsCard a {
+    display: block;
+  }
+  .roomCardSlider .roomsCard .displayBox {
+    position: absolute;
+    left: 25px;
+    background: white;
+    top: 23px;
+    padding: 5px 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .roomCardSlider .roomsCard .displayBox span {
+    color: #c78919;
+    text-transform: uppercase;
+    font-size: 13px;
+  }
+  .roomCardSlider .roomsCard .heartBox {
+    position: absolute;
+    right: 10px;
+    top: 23px;
+  }
+  .roomCardSlider .roomsCard .heartBox img {
+    height: 35px;
+  }
+  .roomCardSlider .roomsCard img.roomsImg {
+    width: 100%;
+    height: 198px;
+    border-radius: 20px 20px 0 0;
+    object-fit: cover;
+  }
+  .roomCardSlider .innerRooms {
+    padding: 0px 20px;
+  }
+  .roomCardSlider .innerRooms h4 {
+    text-transform: capitalize;
+    font-weight: 500;
+    margin: 20px 0 12px 0px;
+  }
+  .roomCardSlider .innerRooms .iconFlex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .roomCardSlider .innerRooms .iconFlex h5 {
+    display: flex;
+    align-items: center;
+  }
+  .roomCardSlider .innerRooms .iconFlex h5 img.iconsRoom {
+    height: 20px;
+  }
+  .roomCardSlider .innerRooms .iconFlex h5 span {
+    font-size: 12px;
+    color: grey;
+    margin-left: 3px;
+  }
+  .roomCardSlider .innerRooms .iconFlex h5 span.guestHead {
+    font-size: 12px;
+  }
+  .roomCardSlider .innerRooms .iconFlex h5:nth-child(2) {
+    margin-left: 20px;
+  }
+  .roomCardSlider .innerRooms a {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  .roomCardSlider .innerRooms a i {
+    font-size: 15px;
+    padding-left: 10px;
+  }
+  .roomCardSlider .innerRooms p {
+    font-weight: 300;
+    font-size: 14px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  
+  .popupDailog {
+    height: 85%;
+    width: 90%;
+    max-width: unset !important;
+    margin: 69px auto;
+    padding: 0;
+  }
+  .popupDailog .modal-content {
+    height: 100%;
+    overflow: hidden;
+  }
+  .popupDailog .modal-content .close {
+    position: absolute;
+    right: 0;
+    top: 4px;
+    background: transparent;
+    font-size: 40px;
+    color: #605d5d;
+    z-index: 2;
+  }
+  
+  .modalTab .oneUl {
+    justify-content: space-between;
+  }
+  .modalTab .oneUl .twoUl {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+  }
+  .modalTab .oneUl .twoUl li a {
+    padding: 10px 20px;
+    color: #605d5d;
+  }
+  .modalTab .oneUl .twoUl li a.active {
+    border: 1px solid rgba(129, 125, 125, 0.2901960784);
+    color: #c78919;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(128, 128, 128, 0.1411764706);
+  }
+  .modalTab .oneUl .modalBtns {
+    display: flex;
+    width: 20%;
+    justify-content: space-around;
+    margin-right: 40px;
+  }
+  .modalTab .oneUl .modalBtns h5 {
+    display: flex;
+    background: white;
+    padding: 10px 20px;
+    width: 112px;
+    border: 1px solid rgba(128, 128, 128, 0.2588235294);
+    border-radius: 10px;
+  }
+  .modalTab .oneUl .modalBtns h5:hover {
+    background: rgba(128, 128, 128, 0.1215686275);
+    transition: all 1s linear;
+    cursor: pointer;
+  }
+  .modalTab .oneUl .modalBtns h5 img {
+    height: 21px;
+    margin-right: 6px;
+  }
+  .modalTab .oneUl .modalBtns h5 span {
+    display: block;
+    color: #605d5d;
+    font-size: 16px;
+  }
+  
+  .mainSlider {
+    width: 100%;
+    overflow: hidden;
+  }
+  .scrollBox{
+    overflow-y: scroll;
+    height: 820px;
+    margin: 10px auto;
+  }
+  .mainSlider .slick-prev, .mainSlider .slick-next {
+    display: none !important;
+  }
+  .mainSlider .mainFlex {
+    display: flex;
+    flex-direction: column;
+  }
+  .mainSlider .mainFlex .flexThree3 {
+    width: 100%;
+  }
+  .mainSlider .mainFlex .flexThree3 .innerFlex {
+    display: flex;
+    width: 100%;
+  }
+  .mainSlider .mainFlex .flexThree3 .innerFlex .fancyBox {
+    width: 100%;
+    padding: 6px 4px;
+  }
+  .mainSlider .mainFlex .flexThree3 .innerFlex .fancyBox img {
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+  }
+  
+  .tabMap .googleMaps {
+    height: 100vh;
+  }
+  .tabMap .googleMaps iframe {
+    width: 100%;
+    height: 75%;
+  }

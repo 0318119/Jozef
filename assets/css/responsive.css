@@ -1,0 +1,277 @@
+
+@media screen and (max-width:1600px) {
+    .scdTesti{
+        width: 80%;
+    }
+}
+@media screen and (max-width:1299px) {
+    .scdTesti {
+        padding: 30px 20px;
+    }
+    .videoModal{
+        width: 80%;
+    }
+}
+@media screen and (max-width:1099px){
+    .modalTab .oneUl .modalBtns {
+        width: 40%;
+    }
+    .modalTab .oneUl .twoUl {
+        width: 50%;
+    }
+}
+@media screen and (max-width:992px){
+    .mobileMenu{
+        width: 100%;
+        background: white;
+        margin-top: 20px;
+    }
+    .headerTop.topMenu{
+        padding-bottom: 20px;
+        background: white;
+        box-shadow: -1px 5px 10px #80808021;
+    }
+    .mobileMenu ul li.rentBox ul{
+        position: relative !important;
+        display: none;
+    }
+    .mobileMenu ul li.rentBox:hover ul{
+        display: block;
+    }
+    .headerTop .navbar .collapse ul li a {
+        color: black !important;
+        line-height: 25px;
+        letter-spacing: 1px;
+        padding-left: 21px;
+        border-bottom: 1px solid #8080800f;
+    }
+    .btnCon {
+        margin: 0;
+    }
+    .navbar-toggler .navbar-toggler-icon i.fa-bars{
+        font-size: 35px;
+        background: #8080806e;
+        padding: 5px 10px 5px 10px;
+        border-radius: 6px;
+    }
+    .aboutSec{
+        margin-top: 20px;
+    }
+    .testiBox h4 {
+        font-size: 30px;
+    }
+    .scdTesti{
+        width: 100%;
+    }
+    .row.agents > div:nth-child(3){
+        margin-top: 20px;
+    }
+    .colHighlights {
+        width: 100%;
+        flex: unset;
+        max-width: unset;
+    }
+    .colSlider {
+        width: 100%;
+        flex: unset;
+        max-width: unset;
+    }
+    .saveShare {
+        width: 39%;
+    }
+    .saveShare .saveShareicons{
+        background: transparent;
+    }
+    .saveShare .saveShareicons img{
+        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(86deg) brightness(106%) contrast(102%);
+    }
+    .saveShare .saveShareicons a {
+        display: none;
+    }
+    .titles {
+        align-items: baseline;
+        width: 50%;
+        flex-direction: column;
+    }
+    .titleOne,.titleTwo,.titleThree{
+        margin-left: 5px;
+    }
+    .titleTwo,.titleThree{
+        margin-top: 5px;
+    }
+    .roomsDetailsBox .smallImg{
+        display: none;
+    }
+    .modalTab .oneUl .twoUl {
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+        margin: 6px 8px;
+        padding: 30px 0;
+    }
+    .modalTab .oneUl .twoUl li{
+        white-space: nowrap;
+    }
+    .modalTab .oneUl .modalBtns {
+        align-items: center;
+        width: 20%;
+    }
+    .modalTab .oneUl .modalBtns h5{
+        background: transparent;
+        border: none;
+    }
+    .modalTab .oneUl .modalBtns h5:hover {
+        background: none;
+    }
+    .modalTab .oneUl .modalBtns h5 span{
+        display: none;
+    }
+}
+@media screen and (max-width:768px){
+    .heroSelider .heroImg > div h5 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .heroSelider .heroImg {
+        height: 600px;
+    }
+    .heroSelider .slick-dots {
+        bottom: 350px;
+    }
+    .testiBox h4 {
+        font-size: 25px;
+    }
+    .agentCol{
+        width: 50%;
+    }
+    .agentsBox {
+        padding: 10px;
+    }
+    .agentsBox img{
+        width: 100%;
+        height: 170px;
+        object-fit: cover;
+    }
+    .agentsBox h4 {
+        margin: 20px 0 0 0;
+    }
+    .agentsBox a {
+        margin-top: 30px;
+    }
+    .scdTesti{
+        width: 100%;
+        position: relative;
+        top: -30px;
+    }
+    .copyrightLinks ul li a {
+        margin: 0 30px 15px 0;
+    }
+    .interiorBox .interiorTable tr .upBox {
+        flex-direction: column;
+    }
+    .interiorBox .interiorTable tr .upBox li {
+        width: 100%;
+    }
+}
+@media screen and (max-width:575px){
+    .heroSelider .heroImg > div h5 {
+        font-size: 30px;
+    }
+    .aboutSec > img{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+    .featuredCol{
+        width: 50%;
+    }
+    .footerCol{
+        width: 50%;
+    }
+    .popupDailog {
+        height: 100%;
+        width: 100%;
+        max-width: unset !important;
+        margin: 0px auto;
+    }
+    .modal-content {
+        border: none;
+        border-radius: 0;
+    }
+    .mainSlider .mainFlex .flexThree3 .innerFlex {
+        flex-direction: column;
+    }
+    .mapsInfo ul.nav-tabs{
+        width: 100%;
+    }
+    .mapsInfo .tab-content .googleMaps iframe {
+        width: 100%;
+    }
+}
+@media screen and (max-width:480px){
+    .featuredCol{
+        width: 80%;
+        margin: auto;
+    }
+    .agentCol{
+        width: 80%;
+    }
+    .footerCol{
+        width: 80%;
+    }
+    .row.agents > div:nth-child(2){
+        margin-top: 20px;
+    }
+    .agentsBox img {
+        height: 200px;
+        object-position: top;
+    }
+    .testiBox img{
+        height: 253px;
+        object-position: top;
+    }
+    .copyRight {
+        font-size: 14px;
+    }
+    .copyrightLinks ul li a {
+        font-size: 14px;
+    }
+    .videoModal{
+        width: 95%;
+    }
+    .featured h5 {
+        font-size: 25px;
+        margin-top: 100px;
+    }
+    .featured p {
+        padding: 7px 15px 0 15px;
+        font-size: 14px;
+    }
+    .agents h5 {
+        font-size: 25px;
+    }
+    .agents p {
+        font-size: 14px;
+    }
+    .roomsDetailsBox {
+        height: 300px;
+    }
+    .roomsDetailsBox .bigImg img.bigImage {
+        height: 300px;
+    }
+    .titles {
+        top: 40%;
+    }
+    
+    
+}
+@media screen and (max-width:375px){
+    .featuredCol{
+        width: 95%;
+        margin: auto;
+    }
+}
+@media (min-width: 576px){
+    .modal-dialog {
+       max-width: unset;
+    }
+}
